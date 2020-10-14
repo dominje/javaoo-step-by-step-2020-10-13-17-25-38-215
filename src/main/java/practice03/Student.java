@@ -1,24 +1,15 @@
 package practice03;
 
-public class Student {
+public class Student extends Person {
 
-    private int age;
+
     private int klass;
-    private String name;
 
     public Student(String name, int klass, int age) {
-        this.age = age;
+        super(name, age);
         this.klass = klass;
-        this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public int getKlass() {
         return klass;
@@ -28,15 +19,10 @@ public class Student {
         this.klass = klass;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String introduce() {
         return "I am a Student. I am at Class "+ klass +'.';
     }
-}
+
+
+    }
+
