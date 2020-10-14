@@ -24,7 +24,7 @@ public class Student {
         return klass;
     }
 
-    public void setClassNo(int klass) {
+    public void setKlass(int klass) {
         this.klass = klass;
     }
 
