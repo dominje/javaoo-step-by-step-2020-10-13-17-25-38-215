@@ -5,7 +5,6 @@ public class Klass {
     private int number;
     private Student studentName;
 
-
     public Student getStudentName() {
         return studentName;
     }
@@ -17,7 +16,6 @@ public class Klass {
     public Klass(Student studentName) {
         this.studentName = studentName;
     }
-
 
     public int getNumber() {
         return number;

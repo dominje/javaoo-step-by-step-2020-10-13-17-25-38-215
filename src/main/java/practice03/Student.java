@@ -2,7 +2,6 @@ package practice03;
 
 public class Student extends Person {
 
-
     private int klass;
 
     public Student(String name, int klass, int age) {
@@ -10,13 +9,8 @@ public class Student extends Person {
         this.klass = klass;
     }
 
-
     public int getKlass() {
         return klass;
-    }
-
-    public void setKlass(int klass) {
-        this.klass = klass;
     }
 
     public String introduce() {

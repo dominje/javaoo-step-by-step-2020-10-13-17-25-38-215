@@ -13,9 +13,6 @@ public class Student extends Person {
         return klass;
     }
 
-    public void setKlass(int klass) {
-        this.klass = klass;
-    }
     public String introduce() {
         return "My name is "+ super.getName() +'.' + " I am " + super.getAge() + " years old. I am a Student. I am at Class " + klass + ".";
     }

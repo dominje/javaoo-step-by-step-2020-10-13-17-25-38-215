@@ -48,6 +48,5 @@ public class Teacher extends Person {
         }else {
             return super.introduce() + " I am a Teacher. I don't teach " + studentName.getName()+".";
         }
-        //this.klass = new Klass(studentName);
     }
 }
