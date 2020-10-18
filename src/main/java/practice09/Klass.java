@@ -28,8 +28,9 @@ public class Klass {
     public void assignLeader(Student studentName) {
         if(studentName.getKlass().number != number){
             System.out.print("It is not one of us.\n");
+        }else{
+            this.studentName = studentName;
         }
-        this.studentName = studentName;
     }
 
     public Student getLeader() {
