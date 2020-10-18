@@ -69,12 +69,13 @@ public class Teacher extends Person {
         return listKlass;
     }
 
-//    public boolean isTeaching(Student student) {
-//        boolean checkTeacher = getClasses().stream().map(Klass::getDisplayName).anyMatch(classNo -> classNo.equals(student.getKlass().getNumber()));
-//        if (checkTeacher) {
-//            return true;
-//        }
-//            return false;
-//
-//    }
+    public boolean isTeaching(Student student) {
+        boolean checkTeacher = getClasses().stream().map(Klass::getNumber).anyMatch(classNo ->
+                classNo.equals(student.getKlass().getNumber()));
+        if (checkTeacher) {
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
