@@ -26,12 +26,12 @@ public class Practice10Test {
         assertThat(person.getAge()).isEqualTo(21);
     }
 
-//    @Test
-//    public void should_person_with_same_id_be_same_one() throws Exception {
-//        Person person1 = new Person(1, "Tom", 21);
-//        Person person2 = new Person(1, "Tom", 21);
-//        assertThat(person1).isEqualTo(person2);
-//    }
+    @Test
+    public void should_person_with_same_id_be_same_one() throws Exception {
+        Person person1 = new Person(1, "Tom", 21);
+        Person person2 = new Person(1, "Tom", 21);
+        assertThat(person1).isEqualTo(person2);
+    }
 
     @Test
     public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
@@ -57,7 +57,7 @@ public class Practice10Test {
         klass2.assignLeader(jerry);
 
         assertThat(systemOut()).isEqualTo("It is not one of us.\n");
-//        assertThat(klass2.getLeader()).isNotEqualTo(jerry);
+        assertThat(klass2.getLeader()).isNotEqualTo(jerry);
     }
 
     private String systemOut() {
@@ -121,17 +121,17 @@ public class Practice10Test {
         assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.");
     }
 
-//    @Test
-//    public void should_teacher_isTeaching_return_true_when_the_student_is_in_any_classes_the_teacher_teaches() throws Exception {
-//        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
-//        Klass klass3 = new Klass(3);
-//        linkedList.add(klass2);
-//        linkedList.add(klass3);
-//        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
-//        Student jerry = new Student(1, "Jerry", 8, klass2);
-//
-//        assertThat(tom.isTeaching(jerry)).isTrue();
-//    }
+    @Test
+    public void should_teacher_isTeaching_return_true_when_the_student_is_in_any_classes_the_teacher_teaches() throws Exception {
+        LinkedList<Klass> linkedList = new LinkedList<Klass>();
+        Klass klass3 = new Klass(3);
+        linkedList.add(klass2);
+        linkedList.add(klass3);
+        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
+        Student jerry = new Student(1, "Jerry", 8, klass2);
+
+        assertThat(tom.isTeaching(jerry)).isTrue();
+    }
 
 //
 //    @Test
